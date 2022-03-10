@@ -5,7 +5,7 @@
         <td class="td">#</td>
         <td class="td">Дата</td>
         <td class="td">Категория</td>
-        <td class="td">Значение</td>
+        <td class="td">Сумма</td>
       </tr>
       
       <PaymentItem 
