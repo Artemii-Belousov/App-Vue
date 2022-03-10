@@ -1,12 +1,12 @@
 <template>
   <tr>
-    <td class="td">{{ item.id }}</td>
+    <td class="td">{{ index + 1 }}</td>
     <td class="td">{{ item.date}}</td>
     <td class="td">{{ item.category}}</td>
     <td class="td">{{ item.value}}</td>
     <td  
-      v-on:click="$emit('remove-item', item.id)"
-    ><button class="rm">&times;</button></td>
+     
+    ><button  v-on:click="$emit('remove-item', item.id)" class="rm">&times;</button></td>
   </tr>
 </template>
 
@@ -16,7 +16,8 @@ export default {
     item: {
       type: Object,
       required: true
-    }
+    },
+    index: Number,
   },
   
 };
@@ -27,5 +28,8 @@ export default {
   background: red;
   color: #ffffff;
   border: none;
+}
+td{
+  border: 1px solid #42b983;
 }
 </style>

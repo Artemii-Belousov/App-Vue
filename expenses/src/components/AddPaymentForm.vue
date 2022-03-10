@@ -41,7 +41,7 @@ export default {
     onSave() {
       console.log('submit', this.category)
       const data = {
-        // id: new Date (),
+        
         value: this.value,
         category: this.category,
         date: this.date || this.getCurrentDate,
